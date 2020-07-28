@@ -1,0 +1,14 @@
+<div class="form">
+  <%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <br>
+    <%= f.label :content %>
+    <%= f.text_area(:content, size: '50x10') %>
+    <br>
+    <%= f.submit %>
+  <% end %>
+</div>
+<div class="back">
+  <%= link_to "Back to all my articles", articles_path %>
+</div>
